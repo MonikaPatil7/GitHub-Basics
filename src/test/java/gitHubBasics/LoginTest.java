@@ -1,7 +1,7 @@
 package gitHubBasics;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -16,13 +16,13 @@ public class LoginTest {
 	public void setUp() {
 
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		driver = new FirefoxDriver();
 	}
 
 	@Test
 	public void doLogin() {
 
-		driver.get("http://way2automation.com");
+		driver.get("http://gamil.com");
 	}
 
 	@AfterSuite
